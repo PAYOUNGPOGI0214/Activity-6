@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#dialog-message" ).dialog({
+      modal: true,
+      buttons: {
+        Ok: function() {
+          $( this ).dialog( "close" );
+        }
+      }
+    });
+  } );
+  </script>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>JQUERY SESSION (ELECTIVE 1)</h1>
+  </div>
+  </header>
+  <section>
+      <nav>
+          <ul><li><a href="../index.html">HOME</a></li></ul>
+          <ul><li><a href="accordion.html">ACCORDION</a></li></ul>
+          <ul><li><a href="autocomplete.html">AUTO COMPLETE</a></li></ul>
+          <ul><li><a href="button.html">BUTTON</a></li></ul>
+          <ul><li><a href="checkbox.html">CHECKBOX RADIO</a></li></ul>
+          <ul><li><a href="controlgroup.html">CONTROL GROUP</a></li></ul>
+          <ul><li><a href="datepicker.html">DATE PICKER</a></li></ul>
+          <ul><li><a href="dialog.html">DIALOG</a></li></ul>
+          <ul><li><a href="menu.html">MENU</a></li></ul>
+          <ul><li><a href="progressbar.html">PROGRESS BAR</a></li></ul>
+          <ul><li><a href="selectmenu.html">SELECT MENU</a></li></ul>
+          <ul><li><a href="slider.html">SLIDER</a></li></ul>
+          <ul><li><a href="spinner.html">SPINNER</a></li></ul>
+          <ul><li><a href="tabs.html">TABS</a></li></ul>
+          <ul><li><a href="tooltip.html">TOOL TIP</a></li></ul>
+      </nav>
+      div class="main-content">
+      <h1>jQuery UI Dialog - Modal form</h1>
+
+      <div id="dialog-form" title="Create new user">
+        <p class="validateTips">All form fields are required.</p>
+       
+        <form>
+          <fieldset>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" value="Mary Joy Arellano" class="text ui-widget-content ui-corner-all">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" value="Majoy@gmail.com" class="text ui-widget-content ui-corner-all">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" value="xxxxxxx" class="text ui-widget-content ui-corner-all">
+       
+            <!-- Allow form submission with keyboard without duplicating the dialog button -->
+            <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+          </fieldset>
+        </form>
+      </div>
+       
+       
+      <div id="users-contain" class="ui-widget">
+        <h1>Existing Users:</h1>
+        <table id="users" class="ui-widget ui-widget-content">
+          <thead>
+            <tr class="ui-widget-header ">
+              <th>Name</th>
+              <th>Email</th>
+              <th>Password</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ken Baron Cabale</td>
+              <td>Kenbaron@gmail.com</td>
+              <td>ryzza15</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <button id="create-user">Create new user</button>
+       
+       
+  </div>
+</div>      
+    </section>
+    <footer>
+      <p class="footer-text">...</p>   
+        <p>College of Information and Computing Sciences &copy; 2022</p> 
+    </footer>
+</body>
+</html>
